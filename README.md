@@ -1,5 +1,8 @@
 # Portfolio_joanne_techer
+
 Portfolio de Data Analyst 🚀📊
+
+
 Bienvenue sur mon Portfolio de Data Analyst ! Ce projet est conçu pour vous présenter mes compétences, mes projets, et mon parcours en tant qu'analyste de données. C'est un excellent moyen pour montrer mes réalisations et fournir une vue d'ensemble de mon travail. 💡
 
 Contenu du Portfolio 📁
