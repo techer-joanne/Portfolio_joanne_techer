@@ -72,11 +72,18 @@ export const content = {
         link: 'https://recommandation-de-film.streamlit.app/'
       },
       {
+        title: 'Analyse des Ventes',
+        description: 'Dashboard Power BI interactif pour l\'analyse détaillée des ventes et des performances commerciales.',
+        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71',
+        tags: ['Power BI', 'DAX', 'Data Analysis'],
+        link: 'https://app.powerbi.com/links/_XFIdbgWz_?ctid=cf81581f-cf8c-405d-97e3-34a295c8d882&pbi_source=linkShare'
+      },
+      {
         title: 'Portfolio de Démonstration',
         description: 'Site web moderne présentant mes projets et compétences en développement.',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f',
         tags: ['React', 'TypeScript', 'Tailwind'],
-        link: 'https://imaginative-horse-f30be7.netlify.app/'
+        link: 'https://portfolio-joanne-techer.netlify.app/'
       },
       {
         title: "Détecteur de Doublons d'Images",
