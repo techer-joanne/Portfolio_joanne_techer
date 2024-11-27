@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 
 type Language = 'fr';
 
@@ -9,11 +9,11 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+type LanguageProviderProps = {
+  children: ReactNode;
+};
+
+export function LanguageProvider({ children }: LanguageProviderProps) {
   const [language] = useState<Language>('fr');
 
   const value = {
