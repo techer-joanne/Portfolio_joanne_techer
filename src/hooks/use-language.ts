@@ -1,26 +1,33 @@
 import { createContext, useContext, useState } from 'react';
-import type { Language } from '@/lib/i18n';
+
+type Language = 'fr';
 
 type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
 };
 
-// Crée le contexte avec une valeur initiale potentiellement indéfinie
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-// Déclaration du Provider
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>(() => 'fr'); // Correction de useState
+export function LanguageProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const [language] = useState<Language>('fr');
+
+  const value = {
+    language,
+    setLanguage: () => {}, // No-op since we're French only
+  };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
 }
 
-// Hook personnalisé pour utiliser le contexte de langue
 export function useLanguage() {
   const context = useContext(LanguageContext);
   if (context === undefined) {
